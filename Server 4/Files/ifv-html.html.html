@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <!--<link rel="stylesheet" href="" type="text/css">-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Skuska 1 </title>
+
+        <style>
+            .modry {
+                top: 200px;
+                left: 80px;
+                z-index: 2;
+                position: absolute;
+                background-color: aqua;
+                width: 450px;
+                height: 250px;
+            }
+            .hh {
+                width: 100%;
+                text-align: center;
+            }
+
+            .zlty {
+                position: absolute;
+                top: 80px;
+                left: 450px;
+                width: 480px;
+                height: 250px;
+                z-index: 1;
+
+                background-color: yellow;
+                display: flex;
+                flex-direction: row;
+            }
+            .zlty .left {
+                background-color: red;
+                width: 240px;
+            }
+            .zlty .left img {
+                max-width: min-content;
+                width: 240px;
+                height: 243px;
+                border: 5px solid black;
+            }
+            .zlty .right {
+                margin: 5%;
+                margin-top: 6%;
+                margin-right: 2%;
+                width: 225px;
+            }
+            .zlty .right .up {
+                text-align: right;
+            }
+            .zlty .right .down {
+                text-align: left;
+            }
+
+            .sedy {
+                position: absolute;
+                top: 400px;
+                left: 150px;
+                width: 600px;
+                height: 200;
+                z-index: 3;
+
+                background-color: rgb(190, 190, 190);
+                text-align: center;
+                padding-bottom: 3%;
+            }
+            .sedy table {
+                background-color: yellow;
+                border: 4px solid red;
+                width: 100%;
+                padding: 1%;
+            }
+            .sedy table th {
+                font-weight: normal;
+                background-color: lawngreen;
+                padding: 1%;
+            }
+            .sedy table td {
+                padding: 1%
+            }
+
+            .ruzovy {
+                position: absolute;
+                top: 200px;
+                left: 850px;
+                width: 400px;
+                height: 150px;
+                z-index: 0;
+
+                background-color: magenta;
+                padding: 2%;
+            }
+            .ruzovy .heading {
+                text-align: center;
+            }
+            .ruzovy .links {
+                display: flex;
+                align-items: flex-end;
+                display: flex;
+                flex-direction: column;
+                text-align: right;
+            }
+            .ruzovy .links a {
+                margin-bottom: 4%;
+                transition: transform 0.2s;
+            }
+            .ruzovy .links a:active {
+                transform: translateX(7px)
+            }
+
+            .zeleny {
+                position: absolute;
+                top: 350px;
+                left: 800px;
+                width: 400px;
+                height: 300px;
+                z-index: 4;
+
+                background-color: lawngreen;
+                display: flex;
+                flex-direction: column;
+            }
+            .zeleny .con1 {
+                height: 150px;
+            }
+            .zeleny .con2 {
+                display: flex;
+                flex-direction: row;
+                height: 150px;
+            }
+            .zeleny .con2 .left {
+                width: 200px;
+            }
+            .zeleny .con2 .right {
+                width: 200px;
+            }
+
+        </style>
+
+    </head>
+
+
+    <body>
+        
+        <div class="modry">
+            <div class="hh">
+                <h4>Toto je nasa lipa</h4>
+            </div>
+            <ol class="list">
+                <li>Je vysoka</li>
+                <li>Je krasne zelena</li>
+                <li>Porkytuje tien</li>
+            </ol>
+        </div>
+
+        <div class="zlty">
+            <div class="left">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.gU-jfhXBUggbQH5SLrFGaQHaLM%26pid%3DApi&f=1" id="tree_img">
+            </div>
+            <div class="right">
+                <div class="up">&emsp;&emsp;Tato lipa ma viac ako 90 rokov. Poskytuje idealne podmienky pre stretavanie nasej rodiny</div><br>
+                <b><div class="down">&emsp;&emsp;Poskodenie tohto stromu by pre nas bolo velkou stratou.</div></b>
+            </div>
+        </div>
+
+        <div class="sedy">
+            <h3>Sem vlozte tabulku</h3>
+            <table>
+                <tr>
+                    <th>meno</th>
+                    <th>priezvisko</th>
+                    <th>vek</th>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="ruzovy">
+            <div class="heading">
+                Do tejto casti vlozte linky:
+            </div>
+            <div class="links">
+                <a href="www.pravda.sk">pravda</a>
+                <a href="www.sme.sk">sme</a>
+            </div>
+        </div>
+
+        <div class="zeleny">
+            <div class="con1">
+                <ol>
+                    <li>jano</li>
+                    <li>vlado</li>
+                    <ul>
+                        <li>kamil</li>
+                        <li>emil</li>
+                    </ul>
+                    <li>evzen</li>
+                </ol>
+            </div>
+            <div class="con2">
+                <div class="left">
+                    <ul>
+                        <li>dub</li>
+                        <li>buk</li>
+                        <li>smrek</li>
+                        <li>topol</li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li>javor</li>
+                        <li>lipa</li>
+                        <li>platan</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>

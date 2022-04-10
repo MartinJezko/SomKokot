@@ -1,0 +1,85 @@
+
+body {
+    /**/
+    background-color: #f0f8ff;
+}
+
+.container {
+    height: auto;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+a, a:active {
+    text-decoration: none !important;
+}
+
+
+.buttons {
+    box-sizing: border-box;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+.buttons button {
+    /*border: none;*/
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin-bottom: 0.5%;
+    padding-left: 4%;
+    width: 100%;
+    transition: color 0.05s, background-color 0.05s;
+}
+.buttons button:hover {
+    color: aliceblue;
+    background-color: rgb(121, 121, 121);
+    
+}
+
+.color_mode_buttons button{
+    width: 50%;
+    display: flex;
+    float: left;
+}
+
+#footer_text {
+
+    text-align: center;
+
+}
+
+.monke_gif {
+    position: static;
+    display: block;
+    margin: auto;
+}
+
+.video_surprise {
+    height: 1000px;
+    width: 1500px;
+    position: static;
+    display: block;
+    margin: auto;
+
+    animation-name: video_anim;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes video_anim {
+    0% {
+        margin-top: 0%;
+        rotate: -10deg;
+    }
+    50% {
+        margin-top: 10%;
+        rotate: 10deg;
+    }
+    100% {
+        margin-top: 0%;
+        rotate: -10deg;
+    }
+}
